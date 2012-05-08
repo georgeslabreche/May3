@@ -1,0 +1,6 @@
+Thursday, April 26, 2012:
+Up to Pearls, except that we haven’t looked at its class View yet.
+There was a bug in the class View of Page Control: you have to change the word pageChanged: to touchUpInside:. 
+Try everything and do the exercises.
+Read about targets vs. delegates.
+Upload a project named May3 with controls (sliders, date pickers, etc.) and a view controller.

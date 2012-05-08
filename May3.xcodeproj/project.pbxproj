@@ -20,11 +20,11 @@
 		4203E2D21558C62D0015EC11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4203E2D41558C62D0015EC11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4203E2D61558C62D0015EC11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4203E2DA1558C62D0015EC11 /* May3-Info.plist */ = {isa = PBXFileReference; path = "May3-Info.plist"; sourceTree = "<group>"; };
+		4203E2DA1558C62D0015EC11 /* May3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "May3-Info.plist"; sourceTree = "<group>"; };
 		4203E2DC1558C62D0015EC11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4203E2DE1558C62D0015EC11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4203E2E01558C62D0015EC11 /* May3-Prefix.pch */ = {isa = PBXFileReference; path = "May3-Prefix.pch"; sourceTree = "<group>"; };
-		4203E2E11558C62D0015EC11 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4203E2E01558C62D0015EC11 /* May3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "May3-Prefix.pch"; sourceTree = "<group>"; };
+		4203E2E11558C62D0015EC11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4203E2E21558C62D0015EC11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +221,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "May3/May3-Prefix.pch";
 				INFOPLIST_FILE = "May3/May3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -232,6 +233,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "May3/May3-Prefix.pch";
 				INFOPLIST_FILE = "May3/May3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
