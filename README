@@ -4,3 +4,18 @@ There was a bug in the class View of Page Control: you have to change the word p
 Try everything and do the exercises.
 Read about targets vs. delegates.
 Upload a project named May3 with controls (sliders, date pickers, etc.) and a view controller.
+
+-= What this app actually does =-
+
+Implement a UITabBarController that allows navigating across three views.
+The first two views are animated skeletons with music.
+The third and last view is a picture of an elephant with a trumpet sound.
+
+-= Concepts explored =-
+ - Animating a UIImageView's image. This is done by loading multiple UIImages in an array. Each image is a frame of the animation.
+ - UITabBarController and its delegate UITabBarControllerDelegate.
+
+-= Concepts to explore =-
+ - Use of UIImageView's contentMode in order to specifiy image scaling when it is loaded to a UIImageView.
+ - Could not seem to implement the UITabBarControllerDelegate in its own class. Had to implement it in the AppDelegate. Look into if it's possible to achieve the initial intent and if so, how?
+ - Stumbled on NSJavaPath, research what that's about.
