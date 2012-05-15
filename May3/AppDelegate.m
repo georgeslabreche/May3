@@ -74,7 +74,7 @@
     }else{
         
         // If it's not the elephant view then it's a skeletong view.
-        // Play skeleton view if it's not already playing.
+        // Play skeleton music if it's not already playing.
         [soundPlayer playSkeletonMusic];
     }
 }
