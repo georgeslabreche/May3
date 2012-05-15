@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ImageViewController.h"
+#import "AnimatedImageViewController.h"
 
 @implementation AppDelegate
 
@@ -15,11 +17,68 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // Create our view controllers
+    AnimatedImageViewController *skeleton1_IVC = [[AnimatedImageViewController alloc]
+                                                  initWithTitle:@"Walk"
+                                                  buttonImageFilename:@"count.png" 
+                                                  animationFramesDirectory:@"images/skeletons/walking" 
+                                                  imageType:@"jpg" 
+                                                  andAnimationDuration:2.0];
+    
+    AnimatedImageViewController *skeleton2_IVC = [[AnimatedImageViewController alloc]
+                                                  initWithTitle:@"Dance" 
+                                                  buttonImageFilename:@"count.png" 
+                                                  animationFramesDirectory:@"images/skeletons/dancing" 
+                                                  imageType:@"png" 
+                                                  andAnimationDuration:1.0];
+    
+    ImageViewController *elephant_IVC = [[ImageViewController alloc]
+                                         initWithTitle:(NSString *) @"Trumpet" 
+                                         buttonImageFilename:(NSString*) @"count.png" 
+                                         andImageFilename:(NSString*) @"elephant.png"];
+    
+    
+    // Put them in an array
+    NSArray *controllers = [NSArray arrayWithObjects:
+                            skeleton1_IVC,
+                            skeleton2_IVC,
+                            elephant_IVC,
+                            nil
+                            ];
+    
+    // Create tab bar containing all the view controllers.
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	tabBarController.viewControllers = controllers;
+    
+    tabBarController.delegate = self;
+    
+    // Play skeleton music because the first view has a skeleton
+    soundPlayer = [[SoundPlayer alloc]init];
+    [soundPlayer playSkeletonMusic];
+    
+   
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+//Tells the delegate that the user selected an item in the tab bar.
+- (void) tabBarController: (UITabBarController *) tabBarController didSelectViewController: (UIViewController *) viewController {
+    
+	NSLog(@"%@!", viewController.title);
+    
+    if([viewController.title isEqualToString:@"Trumpet"]){
+        // Only plays if it's not playing already
+        [soundPlayer playElephantSound];
+    }else{
+        
+        // If it's not the elephant view then it's a skeletong view.
+        // Play skeleton view if it's not already playing.
+        [soundPlayer playSkeletonMusic];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

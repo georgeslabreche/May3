@@ -13,6 +13,12 @@
 		4203E2DD1558C62D0015EC11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4203E2DB1558C62D0015EC11 /* InfoPlist.strings */; };
 		4203E2DF1558C62D0015EC11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203E2DE1558C62D0015EC11 /* main.m */; };
 		4203E2E31558C62D0015EC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203E2E21558C62D0015EC11 /* AppDelegate.m */; };
+		427D540515621301004A58B0 /* AnimatedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427D540415621301004A58B0 /* AnimatedImageViewController.m */; };
+		427D54A41562165B004A58B0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 427D54A31562165B004A58B0 /* images */; };
+		427D54A715621F82004A58B0 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427D54A615621F82004A58B0 /* SoundPlayer.m */; };
+		427D54A915622065004A58B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427D54A815622065004A58B0 /* AVFoundation.framework */; };
+		427D54AB1562211C004A58B0 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 427D54AA1562211C004A58B0 /* sounds */; };
+		42E8AFE11561F1900070D1C5 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8AFE01561F1900070D1C5 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		4203E2E01558C62D0015EC11 /* May3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "May3-Prefix.pch"; sourceTree = "<group>"; };
 		4203E2E11558C62D0015EC11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4203E2E21558C62D0015EC11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		427D540315621301004A58B0 /* AnimatedImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedImageViewController.h; sourceTree = "<group>"; };
+		427D540415621301004A58B0 /* AnimatedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedImageViewController.m; sourceTree = "<group>"; };
+		427D54A31562165B004A58B0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = SOURCE_ROOT; };
+		427D54A515621F82004A58B0 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		427D54A615621F82004A58B0 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		427D54A815622065004A58B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		427D54AA1562211C004A58B0 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = SOURCE_ROOT; };
+		42E8AFDF1561F1900070D1C5 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		42E8AFE01561F1900070D1C5 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427D54A915622065004A58B0 /* AVFoundation.framework in Frameworks */,
 				4203E2D31558C62D0015EC11 /* UIKit.framework in Frameworks */,
 				4203E2D51558C62D0015EC11 /* Foundation.framework in Frameworks */,
 				4203E2D71558C62D0015EC11 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +78,7 @@
 		4203E2D11558C62D0015EC11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				427D54A815622065004A58B0 /* AVFoundation.framework */,
 				4203E2D21558C62D0015EC11 /* UIKit.framework */,
 				4203E2D41558C62D0015EC11 /* Foundation.framework */,
 				4203E2D61558C62D0015EC11 /* CoreGraphics.framework */,
@@ -75,6 +92,12 @@
 				4203E2E11558C62D0015EC11 /* AppDelegate.h */,
 				4203E2E21558C62D0015EC11 /* AppDelegate.m */,
 				4203E2D91558C62D0015EC11 /* Supporting Files */,
+				42E8AFDF1561F1900070D1C5 /* ImageViewController.h */,
+				42E8AFE01561F1900070D1C5 /* ImageViewController.m */,
+				427D540315621301004A58B0 /* AnimatedImageViewController.h */,
+				427D540415621301004A58B0 /* AnimatedImageViewController.m */,
+				427D54A515621F82004A58B0 /* SoundPlayer.h */,
+				427D54A615621F82004A58B0 /* SoundPlayer.m */,
 			);
 			path = May3;
 			sourceTree = "<group>";
@@ -82,6 +105,8 @@
 		4203E2D91558C62D0015EC11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				427D54AA1562211C004A58B0 /* sounds */,
+				427D54A31562165B004A58B0 /* images */,
 				4203E2DA1558C62D0015EC11 /* May3-Info.plist */,
 				4203E2DB1558C62D0015EC11 /* InfoPlist.strings */,
 				4203E2DE1558C62D0015EC11 /* main.m */,
@@ -141,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4203E2DD1558C62D0015EC11 /* InfoPlist.strings in Resources */,
+				427D54A41562165B004A58B0 /* images in Resources */,
+				427D54AB1562211C004A58B0 /* sounds in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +180,9 @@
 			files = (
 				4203E2DF1558C62D0015EC11 /* main.m in Sources */,
 				4203E2E31558C62D0015EC11 /* AppDelegate.m in Sources */,
+				42E8AFE11561F1900070D1C5 /* ImageViewController.m in Sources */,
+				427D540515621301004A58B0 /* AnimatedImageViewController.m in Sources */,
+				427D54A715621F82004A58B0 /* SoundPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +288,7 @@
 				4203E2E81558C62D0015EC11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
