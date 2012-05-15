@@ -21,21 +21,21 @@
     // Create our view controllers
     AnimatedImageViewController *skeleton1_IVC = [[AnimatedImageViewController alloc]
                                                   initWithTitle:@"Walk"
-                                                  buttonImageFilename:@"count.png" 
+                                                  buttonImageFilename:@"images/buttons/minus.png" 
                                                   animationFramesDirectory:@"images/skeletons/walking" 
                                                   imageType:@"jpg" 
                                                   andAnimationDuration:2.0];
     
     AnimatedImageViewController *skeleton2_IVC = [[AnimatedImageViewController alloc]
                                                   initWithTitle:@"Dance" 
-                                                  buttonImageFilename:@"count.png" 
+                                                  buttonImageFilename:@"images/buttons/plus.png" 
                                                   animationFramesDirectory:@"images/skeletons/dancing" 
                                                   imageType:@"png" 
                                                   andAnimationDuration:1.0];
     
     ImageViewController *elephant_IVC = [[ImageViewController alloc]
                                          initWithTitle:(NSString *) @"Trumpet" 
-                                         buttonImageFilename:(NSString*) @"count.png" 
+                                         buttonImageFilename:(NSString*) @"images/buttons/star.png" 
                                          andImageFilename:(NSString*) @"elephant.png"];
     
     
