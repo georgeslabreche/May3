@@ -14,6 +14,7 @@ The third and last view is a picture of an elephant with a trumpet sound.
 -= Concepts explored =-
  - Animating a UIImageView's image. This is done by loading multiple UIImages in an array. Each image is a frame of the animation.
  - UITabBarController and its delegate UITabBarControllerDelegate.
+ - UITabBarItem image mask.
 
 -= Concepts to explore =-
  - Use of UIImageView's contentMode in order to specifiy image scaling when it is loaded to a UIImageView.
