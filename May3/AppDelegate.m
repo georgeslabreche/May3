@@ -33,16 +33,25 @@
                                                   imageType:@"png" 
                                                   andAnimationDuration:1.0];
     
+    /*
+    AnimatedImageViewController *skeleton3_IVC = [[AnimatedImageViewController alloc]
+                                                  initWithTitle:@"Trumpet" 
+                                                  buttonImageFilename:@"images/buttons/star.png" 
+                                                  animationFramesDirectory:@"images/skeletons/trumpet" 
+                                                  imageType:@"png" 
+                                               andAnimationDuration:2.3];
+    */
     ImageViewController *elephant_IVC = [[ImageViewController alloc]
                                          initWithTitle:(NSString *) @"Trumpet" 
                                          buttonImageFilename:(NSString*) @"images/buttons/star.png" 
                                          andImageFilename:(NSString*) @"elephant.png"];
-    
+
     
     // Put them in an array
     NSArray *controllers = [NSArray arrayWithObjects:
                             skeleton1_IVC,
                             skeleton2_IVC,
+                            //skeleton3_IVC,
                             elephant_IVC,
                             nil
                             ];
