@@ -13,8 +13,8 @@
 		4203E2DD1558C62D0015EC11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4203E2DB1558C62D0015EC11 /* InfoPlist.strings */; };
 		4203E2DF1558C62D0015EC11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203E2DE1558C62D0015EC11 /* main.m */; };
 		4203E2E31558C62D0015EC11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203E2E21558C62D0015EC11 /* AppDelegate.m */; };
+		4208F97E1563334400C440FC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4208F97D1563334400C440FC /* images */; };
 		427D540515621301004A58B0 /* AnimatedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427D540415621301004A58B0 /* AnimatedImageViewController.m */; };
-		427D54A41562165B004A58B0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 427D54A31562165B004A58B0 /* images */; };
 		427D54A715621F82004A58B0 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427D54A615621F82004A58B0 /* SoundPlayer.m */; };
 		427D54A915622065004A58B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427D54A815622065004A58B0 /* AVFoundation.framework */; };
 		427D54AB1562211C004A58B0 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 427D54AA1562211C004A58B0 /* sounds */; };
@@ -32,9 +32,9 @@
 		4203E2E01558C62D0015EC11 /* May3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "May3-Prefix.pch"; sourceTree = "<group>"; };
 		4203E2E11558C62D0015EC11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4203E2E21558C62D0015EC11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4208F97D1563334400C440FC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = SOURCE_ROOT; };
 		427D540315621301004A58B0 /* AnimatedImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedImageViewController.h; sourceTree = "<group>"; };
 		427D540415621301004A58B0 /* AnimatedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedImageViewController.m; sourceTree = "<group>"; };
-		427D54A31562165B004A58B0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = SOURCE_ROOT; };
 		427D54A515621F82004A58B0 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
 		427D54A615621F82004A58B0 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
 		427D54A815622065004A58B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -105,8 +105,8 @@
 		4203E2D91558C62D0015EC11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4208F97D1563334400C440FC /* images */,
 				427D54AA1562211C004A58B0 /* sounds */,
-				427D54A31562165B004A58B0 /* images */,
 				4203E2DA1558C62D0015EC11 /* May3-Info.plist */,
 				4203E2DB1558C62D0015EC11 /* InfoPlist.strings */,
 				4203E2DE1558C62D0015EC11 /* main.m */,
@@ -166,8 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4203E2DD1558C62D0015EC11 /* InfoPlist.strings in Resources */,
-				427D54A41562165B004A58B0 /* images in Resources */,
 				427D54AB1562211C004A58B0 /* sounds in Resources */,
+				4208F97E1563334400C440FC /* images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

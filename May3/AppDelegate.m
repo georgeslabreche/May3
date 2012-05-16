@@ -23,8 +23,8 @@
                                                   initWithTitle:@"Walk"
                                                   buttonImageFilename:@"images/buttons/minus.png" 
                                                   animationFramesDirectory:@"images/skeletons/walking" 
-                                                  imageType:@"jpg" 
-                                                  andAnimationDuration:2.0];
+                                                  imageType:@"png" 
+                                                  andAnimationDuration:3.0];
     
     AnimatedImageViewController *skeleton2_IVC = [[AnimatedImageViewController alloc]
                                                   initWithTitle:@"Dance" 
